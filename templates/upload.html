@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Detection - Upload</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e2124; /* Blackish-blue background color */
+            color: #fff; /* White text color */
+            text-align: center;
+        }
+
+        h1 {
+            padding: 30px 0;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        input[type="file"] {
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #3c6df0; /* Upload button background color */
+            color: #fff; /* Upload button text color */
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        button:hover {
+            background-color: #304e9c; /* Hover background color */
+        }
+    </style>
+</head>
+<body>
+    <h1>Face Detection Upload Page</h1>
+
+    <form method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept=".jpg, .jpeg, .png" required>
+        <button type="submit">Upload and Detect Faces</button>
+    </form>
+</body>
+</html>
